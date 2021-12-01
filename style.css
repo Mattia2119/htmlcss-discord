@@ -5,30 +5,76 @@
     box-sizing: border-box;
 }
 
+.container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    max-width: 1180px;
+}
+
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/*--try--*/
+
 .try {
     height: 500px;
+}
+
+.try .container {
+    border: solid 2px;
 }
 
 /*--Header--*/
 
 header {
-    background-color: red;
+    background-color: #2547d8;
+    height: 100px;
+}
+
+#logo {
+    float:left;
+    width: 15%;
+}
+
+nav {
+    float:left;
+    width: 70%;
+}
+header nav ul {
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#login {
+    float: right;
+    width: 15%;
 }
 
 /*--Jumbotron--*/
 
 #jumbotron {
-    background-color: green;
+    background-color: aqua;
 }
 
 /*--Main--*/
 
 main {
-    background-color: hotpink;
+    background-color: yellow;
 }
 
 /*--Footer--*/
 
 footer {
-    background-color: khaki;
+    background-color: grey;
 }
